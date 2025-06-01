@@ -16,7 +16,7 @@ public:
     World(Texture2D* atlas, int tileSize, int chunkWindowSize, TerrainGenerator* generator);
     ~World();
     void Update(Vector3 cameraWorldPos);
-    void Draw();
+    void DrawGeometryPass(Shader* shader);
 
 
 private:

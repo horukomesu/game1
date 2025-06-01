@@ -136,6 +136,8 @@
     <ClCompile Include="AABB.cpp" />
     <ClCompile Include="blocktypes.cpp" />
     <ClCompile Include="chunk.cpp" />
+    <ClCompile Include="DeferredRenderer.cpp" />
+    <ClCompile Include="GBuffer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mouseControl.cpp" />
     <ClCompile Include="RTSCamera.cpp" />
@@ -146,6 +148,8 @@
     <ClInclude Include="AABB.h" />
     <ClInclude Include="blocktypes.h" />
     <ClInclude Include="chunk.h" />
+    <ClInclude Include="DeferredRenderer.h" />
+    <ClInclude Include="GBuffer.h" />
     <ClInclude Include="mouseControl.h" />
     <ClInclude Include="RTSCamera.h" />
     <ClInclude Include="TerrainGenerator.h" />

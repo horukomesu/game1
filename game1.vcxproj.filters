@@ -39,6 +39,12 @@
     <ClCompile Include="mouseControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RTSCamera.h">
@@ -60,6 +66,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mouseControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

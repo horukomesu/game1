@@ -65,8 +65,15 @@ void World::UpdateChunksWindow(int centerChunkX, int centerChunkZ) {
     }
 }
 
-void World::Draw() {
+/*void World::Draw() {
     for (auto& kv : chunks) {
         kv.second->Draw();
+    }
+}*/
+
+
+void World::DrawGeometryPass(Shader* shader) {
+    for (auto& kv : chunks) {
+        kv.second->DrawGeometryPass(shader);
     }
 }

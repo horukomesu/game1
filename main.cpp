@@ -5,6 +5,10 @@
 #include <rlgl.h>
 #include "blocktypes.h"
 #include "mouseControl.h"
+#include "GBuffer.h"
+#include "DeferredRenderer.h"
+
+
 
 int main(void)
 {
@@ -33,7 +37,17 @@ int main(void)
     World world(&atlas, tileSize, 5, &terrainGenerator); // X Z
 
 
+    GBuffer gbuffer;
+    if (!gbuffer.Init(screenWidth, screenHeight)) {
+        TraceLog(LOG_WARNING, "Failed to create GBuffer!");
+        return 1;
+    }
 
+    DeferredRenderer deferred;
+    if (!deferred.Init(screenWidth, screenHeight, "resources/shaders/glsl330")) { // укажи свой путь к шейдерам
+        TraceLog(LOG_WARNING, "Failed to load deferred shaders!");
+        return 1;
+    }
 
     MouseControl mouseControl(&world, &cam);
     // Main game loop
@@ -45,28 +59,41 @@ int main(void)
         mouseControl.Update();
         world.Update(cam.cameraTarget);
         //----------------------------------------------------------------------------------
+        if (IsKeyPressed(KEY_F1)) deferred.mode = DeferredPassMode::POSITION;
+        if (IsKeyPressed(KEY_F2)) deferred.mode = DeferredPassMode::NORMAL;
+        if (IsKeyPressed(KEY_F3)) deferred.mode = DeferredPassMode::ALBEDO;
+        if (IsKeyPressed(KEY_F4)) deferred.mode = DeferredPassMode::SHADING;
+
+        // --- Geometry Pass ---
+        gbuffer.Bind();
+        rlClearColor(0, 0, 0, 0);
+        rlClearScreenBuffers();
+        BeginMode3D(cam.GetCamera3D());
+        world.DrawGeometryPass(&deferred.geometryShader);
+        EndMode3D();
+        gbuffer.Unbind();
 
         // Draw
         //----------------------------------------------------------------------------------
         BeginDrawing();
-
-        ClearBackground(RAYWHITE);
-
-        BeginMode3D(cam.GetCamera3D());
-        mouseControl.DrawSelection();
-        world.Draw();
+        deferred.RenderLightingPass(gbuffer, cam.GetCamera3D(), deferred.mode);
+        //ClearBackground(RAYWHITE);
+        //world.Draw();
 
         //DrawGrid(10, 5.0f);
 
         EndMode3D();
         //GUI Module
-
+        DrawText("F1: Position  F2: Normal  F3: Albedo  F4: Shading  F5: Depth", 10, 40, 18, DARKGRAY);
+        DrawFPS(10, 10);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
 
     // De-Initialization
+    deferred.Destroy();
+    gbuffer.Destroy();
     //UnloadTexture(atlas);
     //--------------------------------------------------------------------------------------
     CloseWindow();        // Close window and OpenGL context

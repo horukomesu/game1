@@ -3,4 +3,5 @@
   mouseControl.cpp
   World.cpp
   Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   game1.vcxproj -> C:\coding\CPP\project1\game1\x64\Debug\game1.exe

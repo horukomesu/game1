@@ -7,14 +7,13 @@
 #include "TerrainGenerator.h"
 #include <vector>
 class World;
-// --- Вершина чанка
 struct ChunkVertex {
     Vector3 pos;
     Vector2 uv;
     float brightness;
+
 };
 
-// --- Чанк
 class Chunk {
 public:
     Block blocks[CHUNK_SIZE][CHUNK_SIZE_Y][CHUNK_SIZE];
@@ -23,12 +22,20 @@ public:
     Vector3 chunkPos;
     bool dirty = true;
 
-    Texture2D* atlas;   // Указатель на атлас
-    int tileSize;       // размер тайла (например, 16)
+    Texture2D* atlas;  
+    int tileSize;      
+
+
+
+
+
+
 
     Chunk(Vector3 pos, Texture2D* atlas, int tileSize, TerrainGenerator* generator, World* world);
     void BuildMesh();
     void Draw();
+    void DrawGeometryPass(Shader* shader);
+
 private:
     World* world;
     bool HasBlock(int x, int y, int z);

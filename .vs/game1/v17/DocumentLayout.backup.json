@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\coding\\CPP\\project1\\game1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\RTSCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:RTSCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\chunk.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:chunk.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,24 +23,52 @@
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:World.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:Chunk.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\mouseControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:mouseControl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\mouseControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:mouseControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\GBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:GBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\GBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:GBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:DeferredRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:DeferredRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\blocktypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:blocktypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\AABB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:AABB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:TerrainGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:RTSCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:TerrainGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\mouseControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:mouseControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\AABB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,27 +79,7 @@
       "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:blocktypes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\blocktypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:blocktypes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:TerrainGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:TerrainGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\CODING\\LIBRARIES\\RAYLIB\\INCLUDE\\RAYLIB.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\RTSCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:RTSCamera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{36FAD8D8-7A17-4C42-97B2-E6FB916CBBD3}|game1.vcxproj|solutionrelative:RTSCamera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\coding\\libraries\\raylib\\include\\raylib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,7 +89,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -83,7 +99,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-27T16:31:41.234Z",
               "IsPinned": true,
@@ -91,33 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "mouseControl.h",
-              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\mouseControl.h",
-              "RelativeDocumentMoniker": "mouseControl.h",
-              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\mouseControl.h",
-              "RelativeToolTip": "mouseControl.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:15:21.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mouseControl.cpp",
-              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\mouseControl.cpp",
-              "RelativeDocumentMoniker": "mouseControl.cpp",
-              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\mouseControl.cpp",
-              "RelativeToolTip": "mouseControl.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:15:14.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "AABB.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\AABB.h",
               "RelativeDocumentMoniker": "AABB.h",
@@ -125,25 +115,23 @@
               "RelativeToolTip": "AABB.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T19:11:43.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T19:11:43.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AABB.cpp",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\AABB.cpp",
               "RelativeDocumentMoniker": "AABB.cpp",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\AABB.cpp",
               "RelativeToolTip": "AABB.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T19:11:38.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T19:11:38.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "TerrainGenerator.cpp",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.cpp",
               "RelativeDocumentMoniker": "TerrainGenerator.cpp",
@@ -151,25 +139,23 @@
               "RelativeToolTip": "TerrainGenerator.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T17:35:59.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:35:59.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "TerrainGenerator.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.h",
               "RelativeDocumentMoniker": "TerrainGenerator.h",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\TerrainGenerator.h",
               "RelativeToolTip": "TerrainGenerator.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-01T17:35:50.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T17:35:50.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "blocktypes.cpp",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\blocktypes.cpp",
               "RelativeDocumentMoniker": "blocktypes.cpp",
@@ -177,12 +163,11 @@
               "RelativeToolTip": "blocktypes.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-01T15:24:56.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T15:24:56.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "blocktypes.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\blocktypes.h",
               "RelativeDocumentMoniker": "blocktypes.h",
@@ -195,59 +180,136 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "chunk.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\chunk.h",
               "RelativeDocumentMoniker": "chunk.h",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\chunk.h",
               "RelativeToolTip": "chunk.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-01T14:56:35.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "chunk.cpp",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\chunk.cpp",
               "RelativeDocumentMoniker": "chunk.cpp",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\chunk.cpp",
               "RelativeToolTip": "chunk.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAFgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAwJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-01T13:38:39.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "World.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\World.h",
               "RelativeDocumentMoniker": "World.h",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\World.h",
               "RelativeToolTip": "World.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-01T15:35:18.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "World.cpp",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\World.cpp",
               "RelativeDocumentMoniker": "World.cpp",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\World.cpp",
               "RelativeToolTip": "World.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAjwEoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-31T20:01:20.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
+              "Title": "GBuffer.cpp",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\GBuffer.cpp",
+              "RelativeDocumentMoniker": "GBuffer.cpp",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\GBuffer.cpp",
+              "RelativeToolTip": "GBuffer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T20:31:38.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GBuffer.h",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\GBuffer.h",
+              "RelativeDocumentMoniker": "GBuffer.h",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\GBuffer.h",
+              "RelativeToolTip": "GBuffer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T20:31:56.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeferredRenderer.h",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.h",
+              "RelativeDocumentMoniker": "DeferredRenderer.h",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.h",
+              "RelativeToolTip": "DeferredRenderer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T20:32:27.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeferredRenderer.cpp",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.cpp",
+              "RelativeDocumentMoniker": "DeferredRenderer.cpp",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\DeferredRenderer.cpp",
+              "RelativeToolTip": "DeferredRenderer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T20:32:15.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mouseControl.cpp",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\mouseControl.cpp",
+              "RelativeDocumentMoniker": "mouseControl.cpp",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\mouseControl.cpp",
+              "RelativeToolTip": "mouseControl.cpp",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv2UAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-01T19:15:14.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "mouseControl.h",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\mouseControl.h",
+              "RelativeDocumentMoniker": "mouseControl.h",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\mouseControl.h",
+              "RelativeToolTip": "mouseControl.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-01T19:15:21.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "raylib.h",
               "DocumentMoniker": "C:\\coding\\libraries\\raylib\\include\\raylib.h",
               "RelativeDocumentMoniker": "..\\..\\..\\libraries\\raylib\\include\\raylib.h",
@@ -255,7 +317,40 @@
               "RelativeToolTip": "..\\..\\..\\libraries\\raylib\\include\\raylib.h",
               "ViewState": "AgIAACUBAAAAAAAAAAAAwEUBAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-31T18:46:09.21Z",
+              "WhenOpened": "2025-05-31T18:46:09.21Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6f51381d-6de0-4484-9896-223865a8d859",
+        "Display": 1,
+        "X": -5,
+        "Y": 0,
+        "Width": 970,
+        "Height": 1037,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RTSCamera.cpp",
+              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp",
+              "RelativeDocumentMoniker": "RTSCamera.cpp",
+              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp",
+              "RelativeToolTip": "RTSCamera.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-31T20:02:08.384Z",
               "EditorCaption": ""
             }
           ]
@@ -281,49 +376,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
               "Title": "RTSCamera.h",
               "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.h",
               "RelativeDocumentMoniker": "RTSCamera.h",
               "ToolTip": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.h",
               "RelativeToolTip": "RTSCamera.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-31T20:02:10.945Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "6f51381d-6de0-4484-9896-223865a8d859",
-        "Display": 1,
-        "X": 1,
-        "Y": 1,
-        "Width": 1918,
-        "Height": 1030,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RTSCamera.cpp",
-              "DocumentMoniker": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp",
-              "RelativeDocumentMoniker": "RTSCamera.cpp",
-              "ToolTip": "C:\\coding\\CPP\\project1\\game1\\RTSCamera.cpp",
-              "RelativeToolTip": "RTSCamera.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-31T20:02:08.384Z",
               "EditorCaption": ""
             }
           ]
