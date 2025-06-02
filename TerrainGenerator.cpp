@@ -1,60 +1,161 @@
-#include "TerrainGenerator.h"
-#include <raymath.h>
+п»ї#include "TerrainGenerator.h"
 #include <cmath>
+#include <raymath.h>
+#include <cassert>
+
+static float smoothstep(float edge0, float edge1, float x)
+{
+    x = Clamp((x - edge0) / (edge1 - edge0), 0.0f, 1.0f);
+    return x * x * (3.0f - 2.0f * x);
+}
+
+// IDs:
+// 0 - РІРѕР·РґСѓС…
+// 1 - Р·РµРјР»СЏ
+// 2 - С‚СЂР°РІР°
+// 3 - РєР°РјРµРЅСЊ
+// 4 - РІРѕРґР°
+// 5 - РїРµСЃРѕРє
+// 6 - РіР»РёРЅР°
+// 7 - РіСЂР°РІРёР№
+// 8 - Р»РµРґ
+// 9 - Р±РѕР»РѕС‚Рѕ
+
+static inline float getPixelF(const Color* img, int x, int z, int w) {
+    assert(x >= 0 && x < w && z >= 0 && z < w);
+    return img[z * w + x].r / 255.0f;
+}
 
 TerrainGenerator::TerrainGenerator()
-    : worldHeight(32), noiseScale(0.5f), seaLevel(28)
+    : worldHeight(56), noiseScale(0.04f), seaLevel(44) // РїРѕРІС‹С€Р°РµРј СѓСЂРѕРІРµРЅСЊ РІРѕРґС‹!
 {
 }
 
 void TerrainGenerator::GenerateChunk(Vector3 chunkPos, Block blocks[CHUNK_SIZE][CHUNK_SIZE_Y][CHUNK_SIZE])
 {
-    // Получаем перлин-шум для области чанка (чанк x, z)
-    // Используем raylib GenImagePerlinNoise для генерации карты высот (2D)
-    int offsetX = (int)chunkPos.x;
-    int offsetZ = (int)chunkPos.z;
-    float scale = noiseScale; // Чем меньше — тем "шире" холмы
+    int ox = (int)chunkPos.x;
+    int oy = (int)chunkPos.y;
+    int oz = (int)chunkPos.z;
 
-    // Генерируем карту высот для данного чанка
-    Image heightMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, offsetX, offsetZ, scale);
+    Image continentMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox, oz, 0.035f);
+    Image hillsMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 1111, oz + 7777, 0.10f);
+    Image peaksMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 2222, oz + 8888, 0.18f);
+    Image riverMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 3333, oz + 9999, 0.017f);
+    Image swampMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 4444, oz + 4444, 0.08f);
+    Image iceMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 5555, oz + 1234, 0.045f);
+    Image cliffMap = GenImagePerlinNoise(CHUNK_SIZE, CHUNK_SIZE, ox + 8888, oz + 4321, 0.16f);
 
-    Color* pixels = LoadImageColors(heightMap);
+    Color* continentPixels = LoadImageColors(continentMap);
+    Color* hillsPixels = LoadImageColors(hillsMap);
+    Color* peaksPixels = LoadImageColors(peaksMap);
+    Color* riverPixels = LoadImageColors(riverMap);
+    Color* swampPixels = LoadImageColors(swampMap);
+    Color* icePixels = LoadImageColors(iceMap);
+    Color* cliffPixels = LoadImageColors(cliffMap);
 
     for (int x = 0; x < CHUNK_SIZE; ++x) {
         for (int z = 0; z < CHUNK_SIZE; ++z) {
-            // Получаем значение шума [0..255], нормализуем в нужный диапазон
-            int pixelIndex = z * CHUNK_SIZE + x;
-            unsigned char noiseVal = pixels[pixelIndex].r;
-            // Глубина шума в voxel высоту, например [worldHeight - 8, worldHeight + 8]
-            int height = worldHeight + ((int)noiseVal - 128) / 8;
+            float continent = powf(getPixelF(continentPixels, x, z, CHUNK_SIZE), 1.12f);
+            float hills = getPixelF(hillsPixels, x, z, CHUNK_SIZE);
+            float peaks = getPixelF(peaksPixels, x, z, CHUNK_SIZE);
+            float peakVal = hills * 0.4f + peaks * 0.6f;
+
+            float cliff = getPixelF(cliffPixels, x, z, CHUNK_SIZE);
+            float cliffSmooth = smoothstep(0.73f, 0.88f, cliff);
+            float cliffPeak = powf(cliff, 2.1f) * 22.0f;
+
+            float riverBase = getPixelF(riverPixels, x, z, CHUNK_SIZE);
+            float riverValue = fabs(riverBase - 0.5f) * 2.0f;
+            float riverDepth = 1.0f - powf(riverValue, 1.6f);
+            float riverShape = smoothstep(0.69f, 0.82f, riverDepth);
+            float riverMod = -22.0f * riverShape;
+
+            float swamp = getPixelF(swampPixels, x, z, CHUNK_SIZE);
+            float iceZone = getPixelF(icePixels, x, z, CHUNK_SIZE);
+
+            float landBase = (float)seaLevel - 12.0f + continent * (float)(worldHeight + 32 - (seaLevel - 12));
+            float peakMod = powf(peakVal, 2.1f) * 22.0f;
+            float swampMod = swamp > 0.74f ? (swamp - 0.74f) * 13.0f : 0.0f;
+
+            float finalHeight = landBase + peakMod + riverMod - swampMod;
+            finalHeight = (1.0f - cliffSmooth) * finalHeight + cliffSmooth * (landBase + cliffPeak);
+
+            int height = (int)roundf(finalHeight);
+
+            // -- РќРѕРІР°СЏ Р·РѕРЅР° РґР»СЏ РіСЂР°РІРёСЏ С‚РѕР»СЊРєРѕ РіР»СѓР±РѕРєРѕ РїРѕРґ РІРѕРґРѕР№ (СЂСѓСЃР»Р° СЃ РѕС‚СЃС‚СѓРїРѕРј РѕС‚ Р±РµСЂРµРіР°) --
+            bool isOcean = continent < 0.18f;
+            bool isBeach = (height <= seaLevel + 2 && height >= seaLevel - 3 && !isOcean);
+            bool isDeepRiver = (riverDepth > 0.79f && riverDepth < 0.98f && !isOcean && height <= seaLevel - 2); // РіР»СѓР±Р¶Рµ РЅР° 2 Р±Р»РѕРєР° РѕС‚ РІРѕРґС‹!
+            bool isRiverEdge = (riverDepth > 0.73f && riverDepth <= 0.79f && !isOcean && height <= seaLevel); // РїРµСЂРµС…РѕРґ Р±РµСЂРµРі/СЂРµРєР°
+            bool isSwamp = swamp > 0.82f && !isOcean;
+            bool isIce = iceZone > 0.81f && !isOcean;
+            bool isCliff = (cliffSmooth > 0.55f);
 
             for (int y = 0; y < CHUNK_SIZE_Y; ++y) {
-                int globalY = (int)chunkPos.y + y;
+                int wy = oy + y;
+                int b = 0; // Р’РѕР·РґСѓС…
 
-                if (globalY > height) {
-                    if (globalY <= seaLevel) {
-                        blocks[x][y][z].id = 4; // вода (например, id=4, нужно добавить тип в blocktypes!)
-                    }
-                    else {
-                        blocks[x][y][z].id = 0; // воздух
-                    }
-                }
-                else if (globalY == height) {
-                    if (globalY <= seaLevel + 1)
-                        blocks[x][y][z].id = 5; // песок (id=5), если близко к воде
+                if (wy > height) {
+                    if (wy <= seaLevel && !isSwamp)
+                        b = 4; // РІРѕРґР° РЅР°Рґ РІСЃРµРј РґРЅРѕРј РЅРёР¶Рµ seaLevel!
+                    else if (wy <= seaLevel && isSwamp)
+                        b = 9;
                     else
-                        blocks[x][y][z].id = 2; // трава (id=2)
+                        b = 0;
                 }
-                else if (globalY > height - 3) {
-                    blocks[x][y][z].id = 1; // земля (id=1)
+                else if (wy == height) {
+                    if (isCliff)
+                        b = 3;
+                    else if (isSwamp)
+                        b = 9;
+                    else if (isDeepRiver)
+                        b = 7; // РіСЂР°РІРёР№ РўРћР›Р¬РљРћ РІ С†РµРЅС‚СЂРµ СЂРµРєРё Рё РЅР° РіР»СѓР±РёРЅРµ
+                    else if (isRiverEdge)
+                        b = 1; // Р·РµРјР»СЏ РёР»Рё РїРµСЃРѕРє РїРѕ РєСЂР°СЋ СЂРµРєРё
+                    else if (isBeach)
+                        b = 5;
+                    else if (isIce)
+                        b = 8;
+                    else if (wy <= seaLevel + 1)
+                        b = 5;
+                    else
+                        b = 2;
+                }
+                else if (wy > height - 4) {
+                    if (isCliff)
+                        b = 3;
+                    else if (isSwamp)
+                        b = 6;
+                    else if (isDeepRiver)
+                        b = 7;
+                    else if (isRiverEdge)
+                        b = 1;
+                    else if (isBeach)
+                        b = 5;
+                    else
+                        b = 1;
                 }
                 else {
-                    blocks[x][y][z].id = 3; // камень (id=3)
+                    b = 3;
                 }
+                blocks[x][y][z].id = (unsigned char)b;
             }
         }
     }
 
-    UnloadImageColors(pixels);
-    UnloadImage(heightMap);
+    UnloadImageColors(continentPixels);
+    UnloadImageColors(hillsPixels);
+    UnloadImageColors(peaksPixels);
+    UnloadImageColors(riverPixels);
+    UnloadImageColors(swampPixels);
+    UnloadImageColors(icePixels);
+    UnloadImageColors(cliffPixels);
+
+    UnloadImage(continentMap);
+    UnloadImage(hillsMap);
+    UnloadImage(peaksMap);
+    UnloadImage(riverMap);
+    UnloadImage(swampMap);
+    UnloadImage(iceMap);
+    UnloadImage(cliffMap);
 }
